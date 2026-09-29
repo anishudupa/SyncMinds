@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Flashcard App</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<h1>📚 SyncMinds</h1>
+
+			<div class="home-cards">
+				<div class="home-card" onclick="openCards('qna')">
+					<h2>QnA Cards</h2>
+					<p>Short questions and answers</p>
+				</div>
+
+				<div class="home-card" onclick="openCards('revision')">
+					<h2>Revision Cards</h2>
+					<p>Concept-wise detailed revision</p>
+				</div>
+			</div>
+		</div>
+
+		<script>
+			function openCards(type) {
+				window.location.href = `cards.html?type=${type}`;
+			}
+		</script>
+	</body>
+</html>
